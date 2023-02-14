@@ -1,0 +1,249 @@
+
+
+*{
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+/******HEADER********/
+
+.menu2{
+  background-color: black;
+}
+.menu2 li{
+  display: inline-block;
+ 
+}
+.navbar-nav ul{
+  width: 100%;
+}
+.navbar-nav .nav-item img{
+ max-width: 50px;
+}
+/******FOOTER********/
+footer{
+    color: white;
+    font-weight: 300;
+    background-color: black;
+}
+.politicas ul{
+    text-align: justify;
+    list-style-type: none;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/*******VIDEO FONDO*******/
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: 15vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.video-background-audio {
+  position: relative;
+  background-color: black;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.video-background-audio video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  opacity: 0.5;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+}
+/***********************/
+.textdeg{
+  font-size: 18px;
+  font-weight: 300;
+}
+.mdeg{
+  border-radius: 5px;
+}
+
+.h3 .h1 .h2{
+  color:#390000
+}
+
+
+.card{
+  border-radius: 15px;
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+  transition: 300ms;
+}
+.card:hover{
+  transition: 300ms;
+  transform: scale(1.05);
+}
+
+.btn-primary{
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  transition: 300ms;
+  font-family: "NTEpik Medium.otf";
+  font-size: larger;
+
+}
+.btn-primary:hover{
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  transition: 300ms;
+  transform: scale(1.05);
+}
+
+/**RESERVAS**/
+.view{
+  background-image: url('imagenes/pexels-pixabay-260922.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250PX;
+  background-attachment: fixed;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 250PX;
+}
+
+::-webkit-scrollbar{
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+  background:#ffffff;
+}
+::-webkit-scrollbar-thumb{
+border-radius: 5px;
+background: black;
+}
+
+/****SLIDER****/
+.carousel-inner{
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.carousel-caption {
+  bottom: 30%;
+}
+.carousel-item p{
+  position: relative;
+  z-index: 2;
+}
+.slider-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/*svg*/
+.txtTitle {
+  font-size: 40px;
+  fill: #390000;
+}
+#textosn {
+  width: 100%;
+  height: 30%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#textosn{
+  animation: fadeIn 2.5s ease-in infinite alternate;
+ 
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  z-index: 9999;
+  opacity: 0.8;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transition: 300ms;
+}
+.loader svg{
+  width: 20%;
+}
+.oculto{
+  opacity: 0;
+}
+.none{
+  display: none;
+}

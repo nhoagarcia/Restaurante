@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  }
+    .viewCarta{
+      background-image: url('imagenes/alergenos.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 250px;
+      background-attachment: fixed;
+    }
+    
+    .overlayCarta{
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 250PX;
+    }
+    .visible{
+      display: block;
+    }
+    .oculto{
+      display: none;
+    }
+    .anadir{
+        background-image: url("./imagenes/mas.png");
+        background-repeat:no-repeat;
+        background-size: 15%;
+        background-position: 50% 50%;
+      }
+
+    #tabla{
+        margin: 50px auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #tabla th{
+      background-color: black;
+      color: white;
+      padding: 20px 50px;
+      text-align: center;
+    }
+    #tabla td {
+      padding: 15px 20px;
+      margin: auto;
+      text-align: center;
+  }
+    .gif{
+        background-image: url("./imagenes/carga.gif");
+        background-size: 30%;
+        height: 50vh;
+        background-repeat:no-repeat;
+        background-position: 50% 50%;
+        z-index: 99999;
+    }
+
+    .cardAlerg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border:none;
+      flex-direction: column;
+    }
+    .cardAlerg img{
+      width: 40%;
+      margin: auto;
+    }
+    .btn-primary{
+      font-size: 10px;
+      font-weight: 300;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
+
+    }
+    .icono{
+      width: 30%;
+      margin: auto;
+      padding: 0%;
+    }
+    .mas{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      font-size: 15px;
+      font-weight: 400;
+      width: 50%;
+      cursor: pointer;
+    }
+    .mas img{
+      width: 5%;
+      margin: 15px;
+    }
+    .aceptar {
+        /* background: #b3ccff; */
+      background-image: url("./imagenes/aceptar.png");
+      background-repeat:no-repeat;
+      background-size: 30%;
+      background-position: 50% 50%;
+    
+    }
+    .anadir{
+      background-image: url("./imagenes/anadir.png");
+      background-repeat:no-repeat;
+      background-size: 30%;
+      background-position: 50% 50%;
+    }
+    .eliminar{
+      background-image: url("./imagenes/borrar.png");
+      background-repeat:no-repeat;
+      background-size: 30%;
+      background-position: 50% 50%;
+    }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+        <meta charset="UTF8">
+		<title>Alergenos</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet"/>
+            <link rel="stylesheet" href="plantilla.css">
+            <link rel="stylesheet" href="alergenos.css">
+            <link rel="icon" type="image/x-icon" href="logos/SVG/favicon.ico">
+            <!--<script>
+              function popUp(URL) {
+               window.open(URL, 'index.html', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=500,height=500,top = 100');
+              }
+            </script>-->
+    </head>
+    <body>
+
+<!-- HEADER -->
+<header>
+
+  <!---MENÚ---->
+  <nav class=" px-5 navbar navbar-dark navbar-expand-lg menu2 py-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="logos\SVG\horizontal.svg"  width = "70%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="text-left navbar-nav navbar-expand-lg collapse navbar-collapse">
+        <ul class="mr-auto navbar-nav justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="carta.html">Carta</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="alergenos.html">Alergenos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="menus.html">Menús</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="sobreNosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="registro.html"><img src="imagenes\user.svg"  width = "70%"></a>
+            </li>
+          </ul>
+    </div>
+    </div>
+  </nav>
+</header>
+  <!--INICIO-->
+<div class="viewCarta text-center">
+  <div class="overlayCarta py-5">
+  <p class="h1 pY-5 px-4 res text-center text-white">ALÉRGENOS</p>
+  </div>
+</div>
+
+<div id="contenido" class="visible">
+    <h2 class="text-center my-3" id="goClient">Vista Administrador
+    </h2>
+    <div id="tabla">
+
+    </div>
+</div>
+
+
+<div id="user" class="oculto">
+  <h2 class="text-center my-3" id="goAdmin">Vista Cliente
+  </h2>
+  <div class="cartalerg">
+    <div class="container">
+      <div class="row cards text-left align-items-center justify-content-center py-3">
+          <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+              <div class="cardAlerg px-4 py-4 ">
+                    <img src="./alergenos/Cacahuete.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                      Más información ⮞
+                    </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+              <div class="cardAlerg px-4 py-4">
+                    <img src="./alergenos/Crustaceos.svg" class="card-img-top" alt="...">
+    
+                  <div class="card-body">
+                    <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                      Más información ⮞
+                    </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+              <div class="cardAlerg px-4 py-4">
+                    <img src="./alergenos/Gluten.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                      Más información ⮞
+                    </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+              <div class="cardAlerg px-4 py-4">
+                    <img src="./alergenos/Huevo.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                      Más información ⮞
+                    </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row cards text-left align-items-center justify-content-center py-3">
+        <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+            <div class="cardAlerg px-4 py-4 ">
+                  <img src="./alergenos/FrutosSecos.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                    Más información ⮞
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+            <div class="cardAlerg px-4 py-4">
+                  <img src="./alergenos/Soja.svg" class="card-img-top" alt="...">
+  
+                <div class="card-body">
+                  <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                    Más información ⮞
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+            <div class="cardAlerg px-4 py-4">
+                  <img src="./alergenos/Lacteo.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                    Más información ⮞
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3 py-2 card-box">
+            <div class="cardAlerg px-4 py-4">
+                  <img src="./alergenos/Pescado.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <button title="Popover Header" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover Header" data-bs-content="Some content inside the popover">
+                    Más información ⮞
+                  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+<!--FOOTER-->
+<footer>
+    <nav class=" navbar navbar-expand-lg footer align-items-center justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logos\SVG\horizontal.svg"  width = "70%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="copy text-center">
+            <p>
+            © 2020 Copyright: Ainhoa García.
+            </p>
+        </div>
+          <div class="text-left navbar-nav navbar-expand-lg">
+            <div class="politicas">
+                <ul>
+                    <li>
+                        <a href="">Politica de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Politica de cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Aviso legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+</footer>
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+  </script>
+<script>
+
+  document.getElementById("goClient").addEventListener("click", user);  
+  document.getElementById("goAdmin").addEventListener("click", administrator); 
+  function user(){
+        document.getElementById("contenido").classList.remove("visible");
+        document.getElementById("contenido").classList.add("oculto");
+        document.getElementById("user").classList.remove("oculto");
+        document.getElementById("user").classList.add("visible");
+}
+function administrator(){
+        document.getElementById("user").classList.remove("visible");
+        document.getElementById("user").classList.add("oculto");
+        document.getElementById("contenido").classList.remove("oculto");
+        document.getElementById("contenido").classList.add("visible");
+} 
+</script>
+<script src="alergenos.js"></script>
+</body>
+</html>

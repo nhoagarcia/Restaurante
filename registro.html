@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Ainhoa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <link rel="icon" type="image/x-icon" href="logos/SVG/favicon.ico">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script src="registro.js"></script>
+    
+
+   <!--AÑADIR READ ONLY-->
+   <!--VALIDAR > correo, telefono, dni, contraseña(6)-->
+   <!--                    
+    <button id="validar" onclick="javascript:validar">Validar</button>              
+    <button id="grabar" onclick="javascript:grabar">Grabar</button>           
+    function validar(){             
+        if(todook){            
+            if(parseInt(document.gelElementById("telf").value)>=){             
+            }              
+            console.log("error. el nombre no puede ser nulo");            
+        }         
+    }-->
+</head>
+<body>
+    <header>
+<!-- HEADER -->
+<header>
+
+    <!---MENÚ---->
+    <nav class=" px-5 navbar navbar-dark navbar-expand-lg menu2 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="logos\SVG\horizontal.svg"  width = "70%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNav" class="text-left navbar-nav navbar-expand-lg collapse navbar-collapse">
+            <ul class="mr-auto navbar-nav justify-content-end">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="carta.html">Carta</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="alergenos.html">Alergenos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="menus.html">Menús</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="registro.html"><img src="imagenes\user.svg"  width = "70%"></a>
+                </li>
+              </ul>
+        </div>
+        </div>
+      </nav>
+</header>
+    <!--INICIO-->
+    <div class=" container mx-auto my-3 py-5 align-items-center justify-content-center">
+        <div class="container mx-5 caja_formulario" id="login">
+            <p class="h2 text-center my-4"> Inicio de Sesión</p>
+            <form action='login.php' class="form-horizontal" method="post">
+                <div class="form-group">
+                    <label for="email" class="control-label h6">Correo electrónico</label>
+                    <input id="email" name="email" type="email" placeholder="pepito@gmail.com" class="form-control">
+                </div>
+                <div class="form-group position-relative">
+                    <label for="full_password_id" class="control-label h6">Contrasena</label>
+                    <input id="passwrd" name="passwrd" type="hidden" placeholder="******" class="form-control">
+                    <div id="contra" class="contra">
+                        <div id="num-0"></div>
+                        <div id="num-1"></div>
+                        <div id="num-2"></div>
+                        <div id="num-3"></div>
+                        <div id="num-4"></div>
+                        <div id="num-5"></div>
+                    </div>
+                    <div class="cajateclado">
+                        <p>INTRODUCE LA CONTRASEÑA</p>
+                        <svg id="teclado_icono"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm16 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80-176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V144zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM160 336c0-8.8 7.2-16 16-16H400c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V336zM272 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM256 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM368 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM352 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V240zM464 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM448 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V240zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16z"/>
+                        </svg>
+                    </div>
+                    <div id="tabla"></div>
+                
+                </div>
+            
+                <div class="form-group text-center row">
+                    <div class="col ">
+                    <button type="submit" class="btn btn-1">Iniciar Sesión</button>
+                    </div>
+                    <div class="col ">
+                    <button type="reset" id="reset" class="btn btn-2 ">Borrar</button> 
+                    </div>
+                </div> 
+                <div class="form-group text-center">
+                    <p class="h5">¿Todavía no tienes una cuenta? <a id= "reg"> Registrarse.</a></p>
+                </div>
+                
+            </form>
+        </div>
+
+
+        <div class="container mx-5 my-5 caja_formulario mx-3 oculto" id="register">
+            <p class="h2 text-center my-4">Registro</p>
+            <form action="registro.php" form-horizontal" method="post">
+                <div class="form-group row">
+                    <div class="col ">
+                    <label for="full_name_id" class="control-label h6">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="col ">
+                    <label for="full_surnames_id" class="control-label h6">Apellido</label>
+                    <input id="surnames" name="surnames" type="text" placeholder="Apellidos" class="form-control">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="control-label h6">Correo electrónico</label>
+                    <input id="email" name="email" type="email" placeholder="pepito@gmail.com" class="form-control">
+                </div>
+                <div class="form-group row">
+                    <div class="col ">
+                    <label for="phone" class="control-label h6">Número de teléfono</label>
+                    <input id="phone" name="phone" type="phone" placeholder="666666666" class="form-control">
+                </div>
+                <div class="col ">
+                    <label for="date" class="control-label h6">Fecha de Nacimiento</label>
+                    <input id="fecha" name="fecha" type="text" placeholder="10/09/200" class="form-control">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="full_address_id" class="control-label h6">Dirección</label>
+                    <input id="address" name="address" type="text" placeholder="Dirección" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="full_name_id" class="control-label h6">DNI</label>
+                    <input id="dni" name="dni" type="text" placeholder="55555555A" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="full_password_id" class="control-label h6">Contrasena</label>
+                    <input id="password" name="password" type="password" placeholder="******" class="form-control">
+                </div>
+                <div class="form-group text-center">
+                    <div class="">
+                    <button type="submit" id="enviar" value="enviar" class="btn" onclick="validar()">Enviar</button>
+                </div>
+                <p class="h5 mb-5">¿Ya tienes una cuenta? <a id= "log"> Iniciar Sesión.</a></p>
+                </div>   
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+    <nav class=" navbar navbar-expand-lg footer align-items-center justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logos\SVG\horizontal.svg"  width = "70%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="copy text-center">
+            <p>
+            © 2020 Copyright: Ainhoa García.
+            </p>
+        </div>
+          <div class="text-left navbar-nav navbar-expand-lg">
+            <div class="politicas">
+                <ul>
+                    <li>
+                        <a href="">Politica de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Politica de cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Aviso legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <script src="teclado.js"></script>
+</footer>
+<script>
+      document.getElementById("reg").addEventListener("click", register);  
+      document.getElementById("log").addEventListener("click", inicio); 
+      function register(){
+            document.getElementById("login").classList.remove("visible");
+            document.getElementById("login").classList.add("oculto");
+            document.getElementById("register").classList.remove("oculto");
+            document.getElementById("register").classList.add("visible");
+    }
+    function inicio(){
+            document.getElementById("register").classList.remove("visible");
+            document.getElementById("register").classList.add("oculto");
+            document.getElementById("login").classList.remove("oculto");
+            document.getElementById("login").classList.add("visible");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script src="registro.js"></script>
+    
+
+   <!--AÑADIR READ ONLY-->
+   <!--VALIDAR > correo, telefono, dni, contraseña(6)-->
+   <!--                    
+    <button id="validar" onclick="javascript:validar">Validar</button>              
+    <button id="grabar" onclick="javascript:grabar">Grabar</button>           
+    function validar(){             
+        if(todook){            
+            if(parseInt(document.gelElementById("telf").value)>=){             
+            }              
+            console.log("error. el nombre no puede ser nulo");            
+        }         
+    }-->
+</head>
+<body>
+    <header>
+<!-- HEADER -->
+
+<header>
+    <nav class="navbar-expand-lg menu1">
+        <div class="navbar-collapse top-menu text-left p-2 container">
+            <div class="container-fluid contact">
+                <img src="imagenes/phone.png"  width = "20" height = "20" class="mx-2">
+                <span class="text-white">666 666 666</span>
+                <img src="imagenes/mail.png"  width = "20" height = "20" class="mx-2"> 
+                <span class="text-white">info@pasti.com</span>
+            </div>
+        <div class="redes text-right">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active p-1">
+                    <img src="imagenes/facebook.png"  width = "30" height = "30">
+                </li>
+                <li class="nav-item active p-1">
+            <img src="imagenes/instagram.png"  width = "30" height = "30">
+                </li>
+                <li class="nav-item active p-1">
+            <img src="imagenes/gorjeo.png"  width = "30" height = "30">
+        </li>
+        </ul>
+        </div>
+    </div>
+      </nav>
+    
+    
+    <!---SUBMENÚ---->
+            <nav class=" navbar navbar-expand-lg menu2">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="Logos\SVG\horizontal.svg"  width = "70%"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="text-left navbar-nav navbar-expand-lg">
+                    <ul class="mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link text-white" href="plantilla-app.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link text-white" href="registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                        </li>
+                      </ul>
+                </div>
+                </div>
+              </nav>
+    </header>
+<!--INICIO-->
+    <div class=" container mx-auto my-3 py-5 align-items-center justify-content-center">
+        <div class="container mx-5 caja_formulario">
+            <p class="h2 text-center my-4"> Inicio de Sesión</p>
+            <form action='login.php' class="form-horizontal" method="post">
+                <div class="form-group">
+                    <label for="full_name_id" class="control-label h6">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="control-label h6">Correo electrónico</label>
+                    <input id="email" name="email" type="email" placeholder="pepito@gmail.com" class="form-control">
+                </div>
+                <div class="form-group position-relative">
+                    <label for="full_password_id" class="control-label h6">Contrasena</label>
+                    <input id="passwrd" name="passwrd" type="password" placeholder="******" class="form-control">
+                    <!-- <div id="contra" class="contra"></div>
+                   <svg id="teclado_icono"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm16 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80-176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V144zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM160 336c0-8.8 7.2-16 16-16H400c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V336zM272 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM256 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM368 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM352 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V240zM464 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM448 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V240zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16z"/>
+                    </svg>
+                    <div id="tabla"></div>-->
+                </div>
+            
+                <div class="form-group text-center row">
+                    <div class="col ">
+                    <button type="submit" class="btn btn-1">Iniciar Sesión</button>
+                    </div>
+                    <div class="col ">
+                    <button type="reset" class="btn btn-2 ">Borar</button> 
+                    </div>
+                </div> 
+                <div class="form-group text-center">
+                    <p class="h5">¿Todavía no tienes una cuenta? <a href="#"> Registrarse.</a></p>
+                </div>
+                
+            </form>
+        </div>
+
+
+        <!--FOOTER-->
+<footer>
+    <nav class=" navbar navbar-expand-lg footer align-items-center justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Logos\SVG\horizontal.svg"  width = "70%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="copy text-center">
+            <p>
+            © 2020 Copyright: Ainhoa García.
+            </p>
+        </div>
+          <div class="text-left navbar-nav navbar-expand-lg">
+            <div class="politicas">
+                <ul>
+                    <li>
+                        <a href="">Politica de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Politica de cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Aviso legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <script src="teclado.js"></script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  }
+    .viewCarta{
+      background-image: url('imagenes/carta.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 250px;
+      background-attachment: fixed;
+    }
+    
+    .overlayCarta{
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 250PX;
+    }
+  
+  .visible{
+    display: block;
+  }
+  .oculto{
+    display: none;
+  }
+    .cardPlato{
+      border-radius: 5px;
+      border:none;
+      box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+      height: 65vh;
+    }
+  
+    .newplato{
+      padding: 5%;
+      text-align: left;
+    }
+    .newplato label{
+      padding: 5%;
+    }
+    .newplato input[type="file"]{
+      border: none;
+      opacity: 1;
+  
+    }
+    .newplato input{
+      margin: 10px;
+      border: none;
+      border-bottom: 1px solid black;
+      border-radius: 0px;
+  
+    }
+    .btn-add {
+      border: none;
+      border-radius: 15px;
+      background-color: #4b241c;
+      color: white;
+      padding: 10px 20px;
+      transition: 300ms;
+      font-size: larger;
+      width: 100%;
+    
+    }
+    .btn-del{
+      border: none;
+      border-radius: 15px;
+      background-color: #4b241c;
+      color: white;
+      padding: 10px 20px;
+      transition: 300ms;
+      font-size: larger;
+      width: 100%;
+  
+    }
+    .btn-add:hover {
+      border: none;
+      border-radius: 15px;
+      background-color: #773A2E;
+      color: white;
+      transition: 300ms;
+      transform: scale(1.05);
+    }
+    .btn-del:hover{
+      border: none;
+      border-radius: 15px;
+      background-color: #773A2E;
+      color: white;
+      transition: 300ms;
+      transform: scale(1.05);
+    }
+  
+  table{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;  
+    width: 70%;
+    margin: 0 5%;
+    margin-top: 25px;
+    text-align: center;
+  }
+  td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 25px; 
+    min-width:50px;
+      min-height:50px;
+  }
+  .mas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    cursor: pointer;
+  }
+  .mas img{
+    width: 5%;
+    margin: 15px;
+  }
+  .aceptar {
+      /* background: #b3ccff; */
+      background-image: url("./imagenes/aceptar.png");
+      background-repeat:no-repeat;
+      background-size: 20%;
+      background-position: 50% 50%;
+  
+  }
+  .anadir{
+    background-image: url("./imagenes/anadir.png");
+    background-repeat:no-repeat;
+      background-size: 20%;
+      background-position: 50% 50%;
+  }
+  .eliminar{
+    background-image: url("./imagenes/borrar.png");
+    background-repeat:no-repeat;
+      background-size: 20%;
+      background-position: 50% 50%;
+  }
+  .ver{
+    background-image: url("./imagenes/ver.png");
+    background-repeat:no-repeat;
+      background-size: 20%;
+      background-position: 50% 50%;
+  }
+  .nover{
+    background-image: url("./imagenes/nover.png");
+    background-repeat:no-repeat;
+      background-size: 20%;
+      background-position: 50% 50%;
+  }
+  #tabla{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+  }
+  #tabla th{
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  .gif{
+      background-image: url("./imagenes/carga.gif");
+      background-size: 30%;
+    height: 50vh;
+      background-repeat:no-repeat;
+      background-position: 50% 50%;
+      z-index: 99999;
+  }
+  
+  .zoom-box{
+    position: relative;
+  }
+  .zoom-box img{
+    vertical-align: center;
+  }
+  .zoom-box .zoom-selector{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    display: none;
+  
+  }
+  .zoom-box .viewer-box{
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    cursor: move;
+  }
+  .zoom-box .viewer-box img{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }

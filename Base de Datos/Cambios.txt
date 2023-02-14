@@ -1,0 +1,5 @@
+Añadir un botón (ellos ahn puesto un ojo) a la tabla menús para que al pilsarle se depliegue una tabla
+con los platos y se puedan añdir o eliminar a este menú.
+Estaría bien añadir tooltips a los alergenos, a las imagenes de la carta (como extra).
+Crear las nuevas tablas relacionales.
+Se creará en un futuro la relacion clientes-reservas, pero aún no es obligatorio.

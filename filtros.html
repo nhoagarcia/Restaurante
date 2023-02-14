@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Ainhoa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        input{
+            border-radius: 15px;
+            border: none;
+            padding: 5px;
+        }
+        select{
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: beige;
+        }
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+          margin: 20px;
+        } 
+        .switch:before{
+            content: 'Asc';
+            position: absolute;
+            right: -40px;
+            top: 10px;
+            font-size: 18px;
+            color: #74d7c8;
+        }
+        .switch:after{
+            content: 'Desc';
+            position: absolute;
+            left: -40px;
+            top: 10px;
+            font-size: 18px;
+            color: #74d7c8;
+        }
+        .switch input { 
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        input:checked + .slider {
+          background-color: #008b80;
+        }
+        input:focus + .slider {
+          box-shadow: 0 0 1px #008b80;
+        }
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        .visible{
+            display: block;
+        }
+        .oculto{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="box" class="box">
+<h2>Fecha</h2>
+<div>
+<input type="radio" id="todos" name="fecha" value="todos">
+<label for="todos">Todos</label><br>
+<input type="radio" id="fecha" name="fecha" value="fecha">
+<label for="fecha">Fecha</label><br>
+<input type="radio" id="rango" name="fecha" value="rango">
+<label for="rango">Betwen</label><br><br>
+
+<div id="elegirfecha" class="oculto">
+    <label for="selectdate" >Seleccionar fecha</label><br>
+    <input id="selectdate" type="date"/>
+</div>
+<div id="elegirfecharango" class="oculto">
+    <label for="selectrango" >Selecciona la fecha de inicio</label><br><br>
+    <input id="selectrango" type="date"/><br><br>
+    <label for="selectrango">Selecciona la fecha de fin</label><br><br>
+    <input id="selectrango" type="date"/><br><br>
+</div>
+</div>
+</div>
+<div class="box">
+<h2>Control numérico</h2>
+<input type="range" name="numrango" value="0" min="0" max="30" step="1">
+<h2>Filtrar por DNI</h2>
+<input type="text" name="dni"/>
+
+</div>
+<div class="box">
+<h2>Ordenar:</h2>
+<select name="order" id="order">
+    <option value="fecha">Fecha</option>
+    <option value="apellidos">Apellidos</option>
+    <option value="id">Id</option>
+    <option value="comensales">Comensales</option>
+  </select>
+
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+
+
+</div>
+<script src="./filtros.js"></script>
+</body>
+</html>
